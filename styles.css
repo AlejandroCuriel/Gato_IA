@@ -1,14 +1,15 @@
 /* Globales */
-html {
+html, body {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: #ebd9d9;
-
+    background-color: #bbb93f;
+    padding: 0;
+    margin: 0;
 }
 a {
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
-    color: #cfa7a7;
+    color: #8b6e1c;
     font-size: 3rem;
     font-weight: 600;
 
@@ -39,21 +40,77 @@ h3 {
     justify-content: center;
 }
 
-.container_box {
-    
-
-}
 
 .container_box button {
     width: 10rem;
     height: 10rem;
     margin: 1rem;
 }
+.equis::before {
+    display: block;
+    content: "X";
+    font-size: 10rem;
+    color: black;
+    text-align: center;
+}
+.circulo::before {
+    display: block;
+    content: "O";
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+}
+.vacio::before {
+    content: '';
+}
+.contenedor-notificacion {
+    position: relative;
+}
+
+.notificacion {
+    width: 100vw;
+    height: 30rem;
+    background-color: rgba(204, 57, 57, 0.699);
+    position: absolute;
+    top: -332px;
+}
 
 button {
-    width: 8rem;
-    height: 5rem;
-    background-color: #ebd9d9;
+    width: 20rem;
+    height: 8rem;
     border-radius: 5px;
+    background-color: rgb(209, 50, 50);
+}
+#time {
+    font-size: 5rem;
+}
+.dp-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.puntacion { 
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.puntacion p:first-child {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(197, 56, 13);
+    font-weight: 600;
+    margin-top: 0;
+}
+.showWinner {
+    top: -33px;
+    transition: all .3s ease;
+}
+#ganador {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
 
 }

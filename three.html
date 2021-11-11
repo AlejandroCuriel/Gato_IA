@@ -8,7 +8,12 @@
 
 </head>
 <body>
-    <h1>El Gato-loco</h1>
+  <div class="contenedor-notificacion">
+    <div class="notificacion">
+      <p id="ganador"></p>
+    </div>
+  </div>
+  <h1>El Gato-loco</h1>
 <table align="center" border="0">
 <tr>
 
@@ -34,10 +39,32 @@
  <table align="center" border="0">
   <tr>   
    <td width="300"  align="center"><br />
-    <a href="javascript:location.reload()">
-    <button>Reiniciar</button></a>
+    
    </td>   
+   <div class="botones">
+    <button onclick="reiniciar()" >Reiniciar</button>
+    <button style="background-color: rgb(176, 81, 214);" onclick="automatico()" >Automatico</button>
+   </div>
+
   </tr>
+  <div class="dp-flex">
+    <div class="c-body">
+      <div class="c-time">
+          <div class="screen">
+              <span id="time">00:00:00</span>
+          </div>  
+      </div>        
+    </div>
+    <div class="puntacion">
+      <p>puntacion</p>
+      <p>Equis: <span id="x"></span></p>
+      <p>Circulo: <span id="o"></span></p>
+      <p>Empate: <span id="e"></span></p>
+
+    </div>
+  </div>
+
+
 <script src="/app.js"></script>
 </table>
 </body>
