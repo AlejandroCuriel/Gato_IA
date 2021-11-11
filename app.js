@@ -31,7 +31,7 @@ function celda(celda){
          jugador=1; 
          }
    } else {
-      window.alert("No puedes pulsar sobre una celda coloreada");
+      window.alert("No puedes pulsar sobre una celda marcada");
    }
    dibujar();
    var r = ganador();

@@ -69,8 +69,8 @@ h3 {
 
 .notificacion {
     width: 100vw;
-    height: 30rem;
-    background-color: rgba(204, 57, 57, 0.699);
+    height: 10rem;
+    margin-top: 2rem;
     position: absolute;
     top: -332px;
 }
