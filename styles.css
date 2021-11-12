@@ -2,23 +2,22 @@
 html, body {
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: #bbb93f;
+    background-color: #79786f;
     padding: 0;
     margin: 0;
 }
 a {
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
-    color: #8b6e1c;
+    color: #000000;
     font-size: 3rem;
-    font-weight: 600;
 
 }
 h1,
 h2,
 h3 {
     line-height: 1.2;
-    color: #333030;
+    color: #fcfcfc;
     font-family: 'Bitter', serif;
     text-transform: uppercase;
 }
@@ -79,23 +78,54 @@ button {
     width: 20rem;
     height: 8rem;
     border-radius: 5px;
-    background-color: rgb(209, 50, 50);
+    font-size: 2.5rem;
+}
+
+.reiniciar {
+    background-color: rgb(219, 97, 49);
+}
+.automatico {
+    background-color: rgb(119, 173, 19);
+}
+.maquina {
+    background-color: rgb(204, 175, 46);
+    
 }
 #time {
-    font-size: 5rem;
+    font-size: 3rem;
 }
-.dp-flex {
-    display: flex;
-    justify-content: space-between;
+
+@media (min-width:768px) {
+    #time {
+        font-size: 5rem;
+    }
 }
+
+
+
+@media (min-width:768px) {
+    .dp-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
 .puntacion { 
     font-size: 2rem;
     text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(219, 97, 49, 0.781);
+    border: 2px solid rgb(119, 173, 19);
+    border-radius: 2%;
 }
 .puntacion p:first-child {
     font-size: 3rem;
     text-transform: uppercase;
-    color: rgb(197, 56, 13);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     margin-top: 0;
 }
@@ -108,9 +138,15 @@ button {
     text-align: center;
     margin-top: 10rem;
 }
-.botones {
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
 
+@media (min-width:768px){
+    .botones {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: 5rem auto;
+    }
+}
+span {
+    color: white;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra papel o tijera</title>
+	<link rel="stylesheet" href="minimax.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+
+	<div class = "selectSym">
+	    <p>Selecciona el símbolo:</p>
+	      <button onClick="selectSym('X')">X</button>
+	      <button onClick="selectSym('O')">O</button>
+	</div>
+
+	<button onclick="startGame()">Reiniciar juego</button>
+	<script type="text/javascript" src="minimax.js"></script>
+</body>
+</html>
