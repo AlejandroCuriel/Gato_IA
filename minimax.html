@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Piedra papel o tijera</title>
 	<link rel="stylesheet" href="minimax.css">
+	<!-- <link rel="stylesheet" href="styles.css" -->
 </head>
 <body>
+	<h1>El gato-loco</h1>
 	<table>
 		<tr>
 			<td class="cell" id="0"></td>
@@ -28,13 +30,36 @@
 		<div class="text"></div>
 	</div>
 
-	<div class = "selectSym">
-	    <p>Selecciona el símbolo:</p>
-	      <button onClick="selectSym('X')">X</button>
-	      <button onClick="selectSym('O')">O</button>
-	</div>
+	<div class="gamezone">
+		<div class = "selectSym">
+				<p>Selecciona el símbolo:</p>
+					<button onClick="selectSym('X')">X</button>
+					<button onClick="selectSym('O')">O</button>
+		</div>
 
-	<button onclick="startGame()">Reiniciar juego</button>
+		<button onclick="startGame()" style="background-color: rgb(219, 97, 49); margin-top: 2rem;">Reiniciar juego</button>
+
+	</div>
+	<button class="unoVs">
+		<a href="gato.html">Uno vs Uno</a>
+	</button>
+	<div class="dp-flex">
+    <div class="c-body">
+      <div class="c-time">
+          <div class="screen">
+              <span id="time">00:00:00</span>
+          </div>  
+      </div>        
+    </div>
+    <div class="puntacion">
+      <p>puntacion</p>
+      <p>Equis: <span id="x"></span></p>
+      <p>Circulo: <span id="o"></span></p>
+      <p>Empate: <span id="e"></span></p>
+
+    </div>
+  </div>
+
 	<script type="text/javascript" src="minimax.js"></script>
 </body>
 </html>
